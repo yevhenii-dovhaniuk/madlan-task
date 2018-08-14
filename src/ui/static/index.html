@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image uploader</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="header/header.css">
+    <link rel="stylesheet" href="main/main.css">
+    <link rel="stylesheet" href="form/form.css">
+    <link rel="stylesheet" href="progress/progress.css">
+    <link rel="stylesheet" href="gallery/gallery.css">
+</head>
+<body class="application">
+<header class="header">
+    <span class="header__title">Nice and awesome image uploader</span>
+</header>
+<main class="main">
+    <div class="main__container">
+        <div class="form">
+            <form method="post" id="upload-form">
+                <label for="image-upload">Select image</label>
+                <input
+                        type="file"
+                        id="image-upload"
+                        accept="image/*"
+                        name="image-upload"
+                        class="form__image-input"
+                        placeholder="Upload an image"
+                >
+                <button type="submit" id="image-upload-submit-button">Upload</button>
+            </form>
+            <div class="progress__container">
+                <div class="progress__bar"></div>
+            </div>
+        </div>
+        <div class="groups-separator"></div>
+        <div class="gallery">
+            <div class="gallery__heading">
+                <span>Your gallery</span>
+                <span class="gallery__total">(<span id="gallery-count">0</span> total)</span>
+            </div>
+            <div class="gallery__content" id="gallery"></div>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    Footer
+</footer>
+</body>
+<script type="application/javascript" src="form/form.js"></script>
+<script type="application/javascript" src="gallery/gallery.js"></script>
+</html>

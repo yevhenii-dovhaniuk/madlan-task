@@ -1,0 +1,26 @@
+{
+  "name": "madlan-task",
+  "version": "1.0.0",
+  "description": "Simple image uploader",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node %NODE_DEBUG_OPTION% src/server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yevhenii-dovhaniuk/madlan-task.git"
+  },
+  "keywords": [
+    "vanilla-js",
+    "nodejs"
+  ],
+  "author": "Yevhenii Dovhaniuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yevhenii-dovhaniuk/madlan-task/issues"
+  },
+  "homepage": "https://github.com/yevhenii-dovhaniuk/madlan-task#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}

@@ -1,0 +1,11 @@
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.main__container {
+    flex: 0 1 1280px;
+    background-color: white;
+    padding: 30px;
+    box-sizing: border-box;
+}

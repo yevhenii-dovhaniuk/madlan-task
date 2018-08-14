@@ -1,0 +1,12 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100px;
+}
+
+.header__title {
+    font-size: 2rem;
+    font-family: "Segoe UI Light", "Trebuchet MS", sans-serif;
+}

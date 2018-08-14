@@ -1,0 +1,23 @@
+@keyframes flow {
+    0% {
+        background-position: 0 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0 50%
+    }
+}
+
+.progress__container {
+    width: 25%;
+}
+
+.progress__bar {
+    height: 40px;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    animation: flow 5s linear infinite;
+}
+

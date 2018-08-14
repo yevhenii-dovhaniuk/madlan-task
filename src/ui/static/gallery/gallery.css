@@ -1,0 +1,21 @@
+.gallery {
+    background: initial;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery__heading {
+    font-size: 2rem;
+}
+
+.gallery__total {
+    font-size: 1.2rem;
+    color: #6E6A6C;
+}
+
+.gallery img {
+    max-height: 220px;
+    margin: 10px;
+}
