@@ -17,7 +17,7 @@
 <main class="main">
     <div class="main__container">
         <div class="form">
-            <form method="post" id="upload-form">
+            <form method="post" id="upload-form" onsubmit="function a() {}">
                 <label for="image-upload">Select image</label>
                 <input
                         type="file"
@@ -27,10 +27,10 @@
                         class="form__image-input"
                         placeholder="Upload an image"
                 >
-                <button type="submit" id="image-upload-submit-button">Upload</button>
             </form>
+            <button id="image-upload-submit-button" onclick="uploadImage()">Upload</button>
             <div class="progress__container">
-                <div class="progress__bar"></div>
+                <div class="progress__bar" id="progress-bar"></div>
             </div>
         </div>
         <div class="groups-separator"></div>

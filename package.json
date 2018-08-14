@@ -2,7 +2,7 @@
   "name": "madlan-task",
   "version": "1.0.0",
   "description": "Simple image uploader",
-  "main": "server/server.js",
+  "main": "src/server/server.js",
   "scripts": {
     "start": "node %NODE_DEBUG_OPTION% src/server/server.js"
   },
