@@ -1,5 +1,5 @@
-const uploadImage = () => {
-    const request = new XMLHttpRequest();
+const uploadImage = (Request = XMLHttpRequest) => {
+    const request = new Request();
     const progressElement = document.getElementById('progress-bar');
     const input = document.getElementById('image-upload');
     const file = input.files.length ? input.files[0] : null;
@@ -69,6 +69,10 @@ const hideCompleted = (uploadCompleteImgRef, progressElement) => {
     uploadCompleteImgRef.style.width = '0';
     progressElement.style.width = '0';
     progressElement.style.display = 'none';
+};
+
+module.exports = {
+    uploadImage
 };
 
 window.uploadImage = uploadImage;
