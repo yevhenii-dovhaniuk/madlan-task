@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Image uploader</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="header/header.css">
@@ -17,7 +18,7 @@
 <main class="main">
     <div class="main__container">
         <div class="form">
-            <form method="post" id="upload-form" onsubmit="function a() {}">
+            <form method="post" id="upload-form" onsubmit="uploadImage()">
                 <label for="image-upload">Select image</label>
                 <input
                         type="file"
@@ -29,6 +30,21 @@
                 >
             </form>
             <button id="image-upload-submit-button" onclick="uploadImage()">Upload</button>
+            <img
+                    src="progress/completed.svg"
+                    alt="completed"
+                    class="info-img"
+                    style="opacity: 0; width: 0;"
+                    id="upload-complete-img"
+            />
+            <img
+                    src="progress/error.svg"
+                    alt="error"
+                    class="info-img"
+                    style="opacity: 0; width: 0;"
+                    id="upload-error-img"
+            />
+            <div id="error-text" class="error-text"></div>
             <div class="progress__container">
                 <div class="progress__bar" id="progress-bar"></div>
             </div>
@@ -43,9 +59,6 @@
         </div>
     </div>
 </main>
-<footer class="footer">
-    Footer
-</footer>
 </body>
 <script type="application/javascript" src="form/form.js"></script>
 <script type="application/javascript" src="gallery/gallery.js"></script>
